@@ -1,8 +1,8 @@
 {
   "name": "vs-bundle-visualizer",
   "publisher": "bd-code",
-  "displayName": "Bundle visualizer + MCP Server (Rollup/Webpack json stats)",
-  "description": "Visualize bundle statistics for Rollup and Webpack. Analyzer of module composition. Built-in MCP server for Vite Analyzer integration to work with VS Code's Model Context Protocol.",
+  "displayName": "Bundle visualizer (Rollup/Webpack json stats)",
+  "description": "Visualize bundle statistics for Rollup and Webpack with an interactive interface.",
   "keywords": [
     "TypeScript",
     "Bundle",
@@ -53,24 +53,6 @@
       {
         "command": "bundleVisualizer.refresh",
         "title": "Bundle Visualizer: Refresh Data"
-      },
-      {
-        "command": "bundleVisualizer.startMcpServer",
-        "title": "Bundle Visualizer: Start built-in MCP server"
-      },
-      {
-        "command": "bundleVisualizer.stopMcpServer",
-        "title": "Bundle Visualizer: Stop built-in MCP server"
-      },
-      {
-        "command": "bundleVisualizer.copyMcpDefinition",
-        "title": "Bundle Visualizer: Copy built-in MCP server definition"
-      }
-    ],
-    "mcpServerDefinitionProviders": [
-      {
-        "id": "vite-analyzer",
-        "label": "Vite Analyzer (built-in)"
       }
     ],
     "configuration": {
@@ -81,12 +63,6 @@
           "default": "dist/stats.json",
           "description": "Path to the bundle stats JSON file relative to workspace root.",
           "scope": "resource"
-        },
-        "bundleVisualizer.mcpPort": {
-          "type": "number",
-          "default": 5215,
-          "description": "Port to listen on for the built-in MCP Streamable HTTP transport.",
-          "scope": "machine"
         }
       }
     }
@@ -111,7 +87,6 @@
     "dev:ui": "cd ui && npm run dev"
   },
   "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.21.1",
     "fs-extra": "^11.3.2",
     "minimatch": "^10.1.1",
     "ts-morph": "^27.0.2"

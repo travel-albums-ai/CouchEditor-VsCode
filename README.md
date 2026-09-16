@@ -1,8 +1,8 @@
 [![](icon_small.png)]()
 
-# 📦 Bundle Visualizer + MCP 💖+🤖 AI buddy
+# 📦 Bundle Visualizer
 
-> **A powerful VS Code extension that visualizes bundle statistics for Webpack, Rollup, and Vite with an interactive React-based interface and built-in MCP server support.**
+> **A VS Code extension that visualizes bundle statistics for Webpack, Rollup, and Vite with an interactive React-based interface.**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![VS Code Marketplace](https://img.shields.io/badge/VS%20Code-Extension-blue)](https://marketplace.visualstudio.com/items?itemName=bd-code.vs-bundle-visualizer)
@@ -26,14 +26,6 @@
 - **📈 Statistics Dashboard**: View detailed metrics, sizes, and performance insights
 
 [![](header.png)]()
-
-### 🤖 MCP Server Support
-- **� Built-in MCP Server**: Expose bundle analysis through Model Context Protocol
-- **🌐 HTTP Transport**: Streamable HTTP server on configurable port (default: 5215)
-- **🛠️ Tool Integration**: Use `analyzeBundle` tool in AI assistants and automation
-- **📋 Easy Configuration**: Copy MCP server definition with one command
-
-[![](configureTools.png)]()
 
 ### ⚡ Performance
 - **🚀 Fast Loading**: Built with Vite for optimal performance
@@ -105,54 +97,9 @@ Configure the extension in your VS Code settings (`settings.json`):
 ```json
 {
   // Path to your bundle stats JSON file (relative to workspace root)
-  "bundleVisualizer.statsPath": "dist/stats.json",
-
-  // Port for the built-in MCP server (default: 5215)
-  "bundleVisualizer.mcpPort": 5215
+  "bundleVisualizer.statsPath": "dist/stats.json"
 }
 ```
-
-### 🔌 MCP Server Configuration
-
-The extension provides a built-in MCP (Model Context Protocol) server that can be used by AI assistants and automation tools.
-
-#### Starting the MCP Server
-
-1. **Via Command Palette**: Run `Bundle Visualizer: Start built-in MCP server`
-2. **Programmatically**: The server starts on the configured port (default: 5215)
-
-#### Using the MCP Server
-
-The MCP server exposes the following tool:
-
-- **`analyzeBundle`**: Analyze Vite build output and summarize imports per file
-  - **Parameter**: `folderPath` (string) - Path to analyze
-  - **Returns**: Structured bundle analysis data
-
-#### Configuration for AI Assistants
-
-Copy the MCP server definition to your clipboard:
-```bash
-# Run command: "Bundle Visualizer: Copy built-in MCP server definition"
-```
-
-Then add to your AI assistant configuration (e.g., Claude Desktop, Continue, etc.):
-
-```json
-{
-  "mcpServers": {
-    "bundle-visualizer": {
-      "type": "http",
-      "host": "localhost",
-      "port": 5215
-    }
-  }
-}
-```
-
-#### Stopping the MCP Server
-
-Run `Bundle Visualizer: Stop built-in MCP server` from the Command Palette.
 
 ## 📝 Commands
 
@@ -160,9 +107,6 @@ Run `Bundle Visualizer: Stop built-in MCP server` from the Command Palette.
 |---------|-------------|----------|
 | `Bundle Visualizer: Show Panel` | Open the visualizer panel | - |
 | `Bundle Visualizer: Refresh Data` | Refresh the bundle statistics | - |
-| `Bundle Visualizer: Start built-in MCP server` | Start the MCP HTTP server | - |
-| `Bundle Visualizer: Stop built-in MCP server` | Stop the MCP HTTP server | - |
-| `Bundle Visualizer: Copy built-in MCP server definition` | Copy MCP config to clipboard | - |
 
 ## 🎯 Use Cases
 
@@ -177,20 +121,6 @@ Run `Bundle Visualizer: Stop built-in MCP server` from the Command Palette.
 - 🎯 **Bundle Budgets**: Ensure bundles stay within size limits
 - 📝 **Documentation**: Visual reference for bundle structure
 - 🔄 **CI/CD Integration**: Automated bundle analysis in pipelines
-
-### For AI/Automation
-- 🤖 **MCP Integration**: Programmatic access to bundle analysis
-- 🔧 **Automated Reports**: Generate bundle insights via MCP tools
-- 📈 **Performance Monitoring**: Track and analyze bundles programmatically
-
-
-
-#### Asking to analyze your bundle via MCP can help AI assistants provide targeted optimization suggestions and code improvements.
-[![](conversation.png)]()
-
-#### Asking to improve bundle performance via MCP can yield actionable recommendations.
-[![](conversation2.png)]()
-
 
 ## 🛠️ Development
 
@@ -255,7 +185,6 @@ npm run package
 - **Activation**: Activates on workspace open or when JavaScript/TypeScript files are detected
 - **Webview Provider**: Manages the React UI webview panel
 - **File System**: Reads and parses bundle stats JSON files
-- **MCP Server**: HTTP server exposing bundle analysis tools
 - **Configuration**: Manages user settings and preferences
 
 ### UI Layer (React + Vite)
@@ -270,16 +199,9 @@ npm run package
 - **Theme Sync**: CSS custom properties from VS Code theme
 - **Data Flow**: Extension reads stats → passes to UI → renders visualizations
 
-### MCP Server
-- **Protocol**: Model Context Protocol (MCP) over HTTP
-- **Transport**: Streamable HTTP server transport
-- **Tools**: `analyzeBundle` for programmatic bundle analysis
-- **Port**: Configurable (default: 5215)
-
 ## 📚 Resources
 
 - [VS Code Extension API](https://code.visualstudio.com/api)
-- [Model Context Protocol](https://modelcontextprotocol.io/)
 - [Webpack Bundle Analyzer](https://github.com/webpack-contrib/webpack-bundle-analyzer)
 - [Rollup Plugin Visualizer](https://github.com/btd/rollup-plugin-visualizer)
 - [Vite Documentation](https://vitejs.dev/)
@@ -302,7 +224,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - Built with [VS Code Extension API](https://code.visualstudio.com/api)
 - Powered by [React](https://react.dev/) and [Vite](https://vitejs.dev/)
-- MCP support via [@modelcontextprotocol/sdk](https://github.com/modelcontextprotocol/typescript-sdk)
 - Build tools and inspiration from [webpack-bundle-analyzer](https://github.com/webpack-contrib/webpack-bundle-analyzer)
 - Aide by ChatGPT and friends
 

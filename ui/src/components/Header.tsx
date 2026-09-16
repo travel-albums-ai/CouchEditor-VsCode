@@ -1,7 +1,7 @@
 import React from 'react';
 import { useFilteredNodes } from '../hooks/useFilteredNodes';
 import { isDevelopmentMode } from '../mockApi';
-import { BundleData, McpServerStatus } from '../types';
+import { BundleData } from '../types';
 import { MiniToolbar } from './Header/MiniToolbar';
 import { SortCriteria, SortDirection } from './types';
 
@@ -21,7 +21,6 @@ interface HeaderProps {
   sortDirection: SortDirection;
   hiddenRootFolders: Set<string>;
   rootFolders: string[];
-  mcpStatus: McpServerStatus;
   onToggleSidePanel: () => void;
   onToggleTreemapPanel: () => void;
   onToggleZeroByteFiles: () => void;
@@ -31,8 +30,6 @@ interface HeaderProps {
   onExpandAll: () => void;
   onCollapseAll: () => void;
   onRefresh: () => void;
-  startMCP: () => void;
-  stopMCP: () => void;
   showMainPanel: boolean;
   onToggleMainPanel: () => void;
 }
@@ -47,7 +44,6 @@ export const Header: React.FC<HeaderProps> = ({
   sortDirection,
   hiddenRootFolders,
   rootFolders,
-  mcpStatus,
   onToggleSidePanel,
   onToggleTreemapPanel,
   onToggleZeroByteFiles,
@@ -57,8 +53,6 @@ export const Header: React.FC<HeaderProps> = ({
   onExpandAll,
   onCollapseAll,
   onRefresh,
-  startMCP,
-  stopMCP,
   showMainPanel,
   onToggleMainPanel
 }) => {
@@ -90,25 +84,6 @@ export const Header: React.FC<HeaderProps> = ({
       label: !showMainPanel ? 'Hide 📋' : 'Show 📋',
       name: 'mainPanel',
       title: 'Toggle main panel',
-    }
-  ]
-
-  const mcpItems = [
-    {
-      action: startMCP,
-      disabled: mcpStatus.isRunning,
-      isVisible: mcpStatus.isRunning,
-      label: 'Start MCP',
-      name: 'startMCP',
-      title: 'Start MCP server',
-    },
-    {
-      action: stopMCP,
-      disabled: !mcpStatus.isRunning,
-      isVisible: !mcpStatus.isRunning,
-      label: 'Stop MCP',
-      name: 'stopMCP',
-      title: 'Stop MCP server',
     }
   ]
 
@@ -198,13 +173,6 @@ export const Header: React.FC<HeaderProps> = ({
         )}
 
         <MiniToolbar items={visualizationItems} />
-
-        <MiniToolbar items={mcpItems} position='start'>
-          <span
-            className={`mcp-status-indicator ${mcpStatus.isRunning ? 'running' : 'stopped'}`}
-            title={mcpStatus.isRunning ? `MCP Server Running on port ${mcpStatus.port}` : 'MCP Server Stopped'}
-          />
-        </MiniToolbar>
       </div>
     </div>
   );
