@@ -1,0 +1,217 @@
+# Changelog
+
+All notable changes to this project will be documented in this file.
+
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+## [Unreleased](https://github.com/rand0mC0d3r/vs-bundle-visualizer/compare/v0.0.10...HEAD)
+
+## [v0.0.10](https://github.com/rand0mC0d3r/vs-bundle-visualizer/compare/v0.0.9...v0.0.10) - 2025-11-11
+
+### Commits
+
+- feat: add bundle visualizer integration and analysis script [`53c513d`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/53c513dda7e5331d0ee30fb35d21f991397da99f)
+- feat: refactor TreemapPanel to utilize TreemapLayers, TreemapTiles, and TreemapWrappers components for improved structure and maintainability [`8bd49fa`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/8bd49fac2d49916b971ac892db7a77d1226a9983)
+- feat: implement useTreemapLayout hook for optimized treemap layout calculations in TreemapPanel [`14363d8`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/14363d8853010ecdaf3b7bc07884fb011b739b5f)
+- feat: implement useTreemapData hook for improved treemap data handling in TreemapPanel [`d622946`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/d622946c44f95f39ce23fca445170ca2f56ca8ab)
+- feat: add level wrapper controls to TreemapPanel for enhanced visualization [`aee203f`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/aee203f537e014565945d93725da9cd0dc30aab7)
+- feat: enhance Bundle Visualizer with async HTML generation and improved file handling [`d150077`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/d15007722dde50c3bf1cfbcfd0ae038be76de567)
+- feat: add onSetExpandedFolders prop to FolderPanel for bulk folder expansion control [`2ef9cf2`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/2ef9cf24d3d70cf36f5c776dd291aee4a24903b5)
+- chore: release new version [`96078f4`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/96078f477607733127e3516609c60de517ab2992)
+- feat: update treemap panel styles and layout for improved visualization [`c72782f`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/c72782f0b9467adea9e7783a2885816a11f2ea57)
+- feat: enhance ResizablePanel with titleChildren prop and update TreemapPanel to utilize it for level wrapper controls [`7233715`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/723371527203770489e501dd3bbf49d01869e3cc)
+- feat: update ResizablePanel to support titleChildren prop and adjust styling in FolderPanel [`502eb07`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/502eb07a4bc4b0b1acc3676a9adfd6346d06d446)
+- Refactor code structure for improved readability and maintainability [`a736da8`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/a736da8dcb28ecf0d78fbfc57c2dcc6ba44347f0)
+- feat: pass sortCriteria and sortDirection props to TreemapPanel and update useFilteredNodes call [`789767d`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/789767ddda3d4384ce71d17d5db847e58f1b803b)
+- feat: update treemap panel border style and remove unused input field [`a0ce3f6`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/a0ce3f6131df61992557b781f52e0d7a6f12547e)
+- feat: increase minimum dimensions for treemap nodes and comment out input field [`a098300`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/a0983009b353fdf2fc302e3e4565b2768d50f0ce)
+- feat: adjust treemap layout padding and improve rendering structure [`65420bb`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/65420bb647ba1c7e715bdaec789e590bb30e61dc)
+- feat: add styling for tree root title and adjust padding in TreeView component [`74899e1`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/74899e18ca42cc7d3b4c8af702714f68da7df761)
+- feat: adjust minimum dimensions for treemap node width and height [`f89abdd`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/f89abddfc38e371f26983c00ff81a1fe4855fd74)
+- fix: set initial selected depth to 1 instead of computed max depth in FolderPanel [`e855567`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/e8555671a4aa6d7d8bd20b71d985f407edef0c9e)
+- style: remove gap from main layout for improved spacing [`bf4935c`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/bf4935c21c6648d7de349b2bae64f1f75c785f5d)
+
+## [v0.0.9](https://github.com/rand0mC0d3r/vs-bundle-visualizer/compare/v0.0.8...v0.0.9) - 2025-11-11
+
+### Commits
+
+- chore: remove potpack dependency and update vite version to 7.2.2 [`1340f19`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/1340f19eb59dc321893e7b6c8ba38c581674dde6)
+- feat: add d3-hierarchy for enhanced treemap layout and implement layout configuration in TreemapPanel [`ae19e35`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/ae19e35163eb7718d8149ca479d35d7b72e3beb9)
+- feat: streamline layout computation in TreemapPanel by removing potpack and enhancing d3-hierarchy integration [`920e297`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/920e297581d2ffe7e349878e5200f0d98f11b9db)
+- feat: enhance TreemapPanel layout and file rendering logic with improved container sizing and hover effects [`7b41336`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/7b4133663ad3d56da59cfde8d71790032dde1c12)
+- refactor: streamline bundle data handling and improve folder structure calculation in TreemapPanel [`3581821`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/3581821f27e435947f29a073b24412c0765dc506)
+- feat: add showChildren option to filter options and update analyzeBundle to conditionally include child items [`ba4c1f0`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/ba4c1f06f776addb03e11ac2f6aee4dbb5353d78)
+- feat: implement MiniToolbar component for improved toolbar management and update Header to utilize it [`a916c63`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/a916c631920a4821a434153105b22f80f8e1a5ff)
+- feat: add originalPath to file structure in TreemapPanel and types for enhanced file identification [`b986ea8`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/b986ea8b6e13ffd5b071704d808a1abc27798a66)
+- feat: simplify bundle name extraction and enhance label display in TreemapPanel [`c3cf2e3`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/c3cf2e3ba3c171a5a92710de866b893039eafa41)
+- feat: integrate potpack for dynamic file layout in TreemapPanel [`e308fa4`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/e308fa468ec7fb72cf1d48d95144ffa1b00edc2e)
+- feat: enhance bundle name extraction and filtering in TreemapPanel for improved file organization [`d201f89`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/d201f89de797780e4e122d33b719b4c4c58c1f9f)
+- feat: refactor TreemapPanel to improve file filtering and structure building logic [`f61f4c5`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/f61f4c52232df905e20163ffb7d43590dd440431)
+- feat: enhance MCP server and analyzeBundle tool with detailed usage instructions and capabilities [`d4497df`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/d4497dfcb6cace1d2c6f7c87d38a348227aaed67)
+- feat: implement ResizablePanel component and refactor folder and tree views for improved layout [`181a3e1`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/181a3e1a8a70d55db15c69002e98b74641d8658f)
+- feat: add file opening functionality and enhance header with main panel toggle [`25271f4`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/25271f4c82c197df271b53883a80529969959816)
+- feat: remove label rendering from TreemapPanel for cleaner visualization [`2e92297`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/2e92297bb56fae719be20f8ff707873f2579eb53)
+- feat: refine dependency display and enhance TreeView structure for better clarity [`16106b1`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/16106b1cc14375e010c33495ee1694e0fd5bf5fe)
+- feat: add potpack dependency and integrate it for dynamic file box sizing in TreemapPanel [`ffba999`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/ffba99970f0c6d29349e60528b82651b1ebfd744)
+- feat: enhance analysis instructions, improve panel visibility, and update keyboard shortcuts [`b8b58ba`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/b8b58baa66d4dabd9f8418a4ef4e7907df8e027d)
+- fix: correct label toggling logic in Header and adjust treemap padding for better layout [`3993836`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/39938363fb164eb257a637e578f75eab08ada011)
+- feat: add dotted border for bundle files and display original path in TreemapPanel [`f810b0a`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/f810b0aca8ac3bb0c7a1609b4345521f3aad809c)
+- feat: update panel visibility logic and rename ResizablePanel title for clarity [`99bdc01`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/99bdc01106392ec9a138f644f298531664bdf535)
+- feat: update MCP server messages to include "Bundle Analyzer" for clarity [`399b94c`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/399b94cd7901238751177f81a11326b54cb86715)
+- chore: release new version [`ee39e92`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/ee39e927539639800f2f758435b366a4c383b268)
+- feat: adjust treemap folder header styling for improved layout and readability [`f10e154`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/f10e154d0cc3b547c33c3f5b3dd8367e961bd7da)
+- refactor: remove fullWidth prop from ResizablePanel and adjust usage in TreeView for cleaner implementation [`0d7ec7a`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/0d7ec7adad6eb9773b44752668238e1306d7ea5a)
+- feat: conditionally render file name in TreemapPanel based on dimensions for improved layout [`4a58e8e`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/4a58e8e1696d16e1beac34f32c3174fa6b5e5eb2)
+- feat: reduce opacity of file size text in TreemapPanel for improved visibility [`8c838b9`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/8c838b9a6ea8b7fee802b8deb67f97d98b004c22)
+- feat: adjust toolbar button layout and modify tree size width for improved spacing [`00bcc6b`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/00bcc6b86e8449dfbd221daceaac23cf592cd7af)
+- feat: increase max-width of side panel for improved layout flexibility [`999417a`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/999417a3858a79da3b7ee6a5af9b0cec02034722)
+- feat: add minimum width to layout configuration in TreemapPanel for improved responsiveness [`f28140e`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/f28140e3fae5c5fc6a9bd619dcf7e72db9b8c148)
+
+## [v0.0.8](https://github.com/rand0mC0d3r/vs-bundle-visualizer/compare/v0.0.7...v0.0.8) - 2025-11-10
+
+### Commits
+
+- feat: integrate MCP status management and UI updates [`e4854bc`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/e4854bca857272a55e87666bb218be9629a1b7f1)
+- Refactor code structure for improved readability and maintainability [`7c023dc`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/7c023dce2ee00ad59242ef8d13ffdc34f29dca04)
+- chore: release new version [`6024aa1`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/6024aa1d3fdc997f5e0870ba55d9a9f68682fb3a)
+
+## [v0.0.7](https://github.com/rand0mC0d3r/vs-bundle-visualizer/compare/v0.0.6...v0.0.7) - 2025-11-10
+
+### Commits
+
+- chore: release new version [`dc293a2`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/dc293a2e3833fef106952aaa5782090ecc122977)
+- feat: enhance display name and description in package.json for clarity [`632d09e`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/632d09e8c6216a1be5850bf19f8205f6272ae785)
+- feat: update README title to include MCP and AI buddy reference [`71fd4e5`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/71fd4e537f9d11079e50272c67a474976877f416)
+
+## [v0.0.6](https://github.com/rand0mC0d3r/vs-bundle-visualizer/compare/v0.0.5...v0.0.6) - 2025-11-10
+
+### Commits
+
+- refactor: enhance bundle filtering logic and add usage documentation [`9facd1a`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/9facd1a4bd2b0ed6ed5e765ee84aabbf3c8ef86f)
+- feat: implement analyzeBundle tool for processing and filtering Vite build output [`bea3a43`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/bea3a435e6eee037bcfe2571cab7ae73bcf043c0)
+- feat: implement BundleDataWatcher for monitoring bundle stats file changes [`76f46f9`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/76f46f9f7297a92fa3a77d17cf2ae03f20a8b80f)
+- refactor: streamline MCP command registration and return structure in setupMcp function [`9e6487d`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/9e6487dd5961238b43c810bc18cbe68b14e9b707)
+- fix: ensure setupMcp function is asynchronous and starts MCP server on activation [`39586fe`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/39586fed80d5b08e132b3d4a49769d77e46adb10)
+- chore: release new version [`83eb62a`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/83eb62ad123630abc4741ca28b778208c0bd4041)
+- fix: correctly push MCP disposables to context subscriptions [`4e910b2`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/4e910b2689401ed2f3778296d9d5e4b5ffa1f5cb)
+- fix: include children property in analyzed bundle summary [`0a96c5c`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/0a96c5c364a80b95f65e0b67c9ec1345943e49d5)
+
+## [v0.0.5](https://github.com/rand0mC0d3r/vs-bundle-visualizer/compare/v0.0.4...v0.0.5) - 2025-11-10
+
+### Commits
+
+- chore: release new version [`dbd7624`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/dbd76244f14597a4528b3e9cb318c30faaf47e47)
+- chore: update icon_small.png [`d84473c`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/d84473c0720f41418a6b6d1c488314349c9a4b43)
+
+## [v0.0.4](https://github.com/rand0mC0d3r/vs-bundle-visualizer/compare/v0.0.3...v0.0.4) - 2025-11-10
+
+### Commits
+
+- chore: release new version [`b4c8ff1`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/b4c8ff1c8b49b6fa81b2926c0608ad58b1906248)
+- Refactor code structure for improved readability and maintainability [`8347d72`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/8347d72df804fb8d5b6ac932106f4cb71dcc98d8)
+
+## [v0.0.3](https://github.com/rand0mC0d3r/vs-bundle-visualizer/compare/v0.0.2...v0.0.3) - 2025-11-10
+
+### Commits
+
+- chore: release new version [`3a74f45`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/3a74f4505e29aaf45c96d77ada0a0038b8ffb9c7)
+- Refactor code structure for improved readability and maintainability [`e5a408f`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/e5a408f5fd7b2d55eb106714d5124ce372e7ba16)
+
+## v0.0.2 - 2025-11-10
+
+### Commits
+
+- Add development mode styles and mock API for VS Code integration [`0b2008c`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/0b2008cd0f69f5b1fc0ef42480f89fc542c8b10f)
+- Refactor code structure for improved readability and maintainability [`b525955`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/b5259553d8476fcbe08cc1be60a0937aadefeea1)
+- first commit [`4749d51`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/4749d515e529f541193fc1a6715c4bf7c794aac9)
+- feat: Implement Header, StatusBar, TreeView, and TreemapPanel components [`5eb5b8e`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/5eb5b8e29bd6625ee6d3b17d816c4436b5d59c3f)
+- feat: initialize React application with Vite and TypeScript [`4ac6fef`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/4ac6fefbe8331abfed5b09605dd1f060cf608b23)
+- feat: integrate MCP server and add analyzeBundle tool [`97681f3`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/97681f375414a360da9a0792e6e0cc4f120631ed)
+- feat: implement file/folder tree viewer with expand/collapse functionality and keyboard shortcuts [`677a124`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/677a124bc38076517a75425bb84d86ce92fe5067)
+- Refactor dependency management in FolderPanel and TreeView components [`de23ac2`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/de23ac200bd7f4ff0bb72a1f8c73ea02cab70028)
+- feat: refactor MCP server setup into a separate module and streamline command registration [`7402f5c`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/7402f5cb800a4e33001b209c46fe2395f7514fcd)
+- feat: Implement TreeViewRenderNode component for improved tree node rendering [`b8a6a2f`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/b8a6a2fd9fbcb3ae612ba1d6e0df10b2aff5b057)
+- feat: refactor BundleVisualizerProvider and move it to a separate file [`f96370e`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/f96370e7d8cb7592c13c1f346dd0b50a1b47ccf7)
+- feat: add side panel for folder structure navigation and toggle functionality [`76e2dbc`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/76e2dbcfbeb4abfdde94deeda168358bec7580e3)
+- feat: enhance README with detailed features, quick start guide, and MCP server support information [`ea329fd`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/ea329fd1585513f27130907eb340f6446c6a1682)
+- feat: add sorting and filtering functionality for file explorer [`7f6ad09`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/7f6ad096d4fba7ae498173d14bee03c47eb00941)
+- feat: Enhance folder panel with library filter functionality [`e2542a3`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/e2542a332071e24ba8a619bf37d5f5ff80b24865)
+- feat: add treemap panel for visualizing file sizes [`0aa2f14`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/0aa2f14f748d30caf00e03aa09ba7d2ccf32e159)
+- feat: Add useFilteredNodes hook for improved file filtering and sorting in TreeView [`58ca873`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/58ca87338b7b51f4373dfe89d28b1db79278c413)
+- feat: Enhance TreeView with bundle and dependency visualization [`01f0662`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/01f0662599a898dfe2440bd33c57936c1b659190)
+- Refactor Header component and styles for improved toolbar layout and functionality [`f941060`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/f9410606b9602393ede7f9222f05fe83003c967e)
+- feat: add library filtering functionality to TreeView component [`e4780c5`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/e4780c5d34e0bc733f5c450c236483b114c51c78)
+- Initial commit [`6404685`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/6404685fcf21a69f2397383184d3839298d8eeca)
+- feat: Implement TreeViewDependencyAsset and TreeViewDependencyVendor components for improved dependency visualization [`864f28b`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/864f28bbc99348183421832500b7074a4b30759d)
+- feat: Enhance folder and file visibility based on library filters [`ac39a30`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/ac39a30ba53debe6e9cfd998aeddc7d5cc30e4d4)
+- feat: Introduce TreeViewBundleMainLibraries component for improved library filter management in TreeView [`ad20cf2`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/ad20cf2be5173b886eebd4ad5fb8c749f91a3d23)
+- feat: add commands to start and stop built-in MCP server and configure transport settings [`7f6a8f6`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/7f6a8f664bdc5ade4fb9a557f65463d0566d58ff)
+- feat: Enhance treemap folder styling and layout for improved visual organization [`0c83c11`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/0c83c117f0e282cefcf0947e1f4aefd1fce578a8)
+- refactor: Clean up TreeView components by removing commented code and improving dependency rendering logic [`e85f5a5`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/e85f5a5d06d2fce130340397751fe5291e4520a9)
+- feat: add command to copy built-in MCP server definition to clipboard [`6d567f0`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/6d567f08cb5f3d8d0d3406a68d3a4ed679604e52)
+- feat: add Stats Viewer to activity bar and implement tree data provider [`e057ec8`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/e057ec8ebed9fbdbd70a720d7921e911e5a6785f)
+- feat: add MCP server definition provider for Vite Analyzer and implement analyze tool [`313f8f6`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/313f8f649543f08a33f53bd8ff0cfc953b6e89a7)
+- refactor: Simplify root node filtering and enhance rendering logic in TreeView component [`c2acba0`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/c2acba0d4fa3d89315f73cb73b0e4de4877d7e2a)
+- feat: add option to hide zero-byte files and empty folders [`fb20347`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/fb203477986edd9dab7c0e93b3b1f428a0225176)
+- Add clickable main library filter and empty results styling [`072fd25`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/072fd258de6ce63643178430df2d4fd594cbc7b1)
+- feat: Enhance library filter logic in TreeView by refining node visibility checks and updating dependency parsing [`0fa61f0`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/0fa61f0e0586cb1c51073f00eac786ff85af44e5)
+- feat: refine treemap folder styling and enhance folder collapsing logic [`95f4ea2`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/95f4ea2306465e94dd78fce16598d91f20611bea)
+- Refactor code structure for improved readability and maintainability [`8e112b7`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/8e112b711cceeefdb07f3fbc1653d42257b9ede2)
+- feat: Improve TreeView rendering by restructuring filter display and enhancing empty state message [`c56fb4e`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/c56fb4e8249d3cedffc454b1c4aecd81b1df045f)
+- feat: enhance file size calculation in the file tree [`229f0f6`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/229f0f635535af6484e8e575c6916c241bdcc27b)
+- feat: Refactor treemap folder styles and improve layout responsiveness [`985be5a`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/985be5a5c892bcaf50fdb2677973d5391195c3f7)
+- Enhance TreeView filtering logic to support full path matching [`7a77e8e`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/7a77e8e68d2f9464c16c8954ac569995759e147d)
+- Enhance FolderPanel to support displaying collapsed paths and update selected node handling [`7b49ea1`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/7b49ea171e3883732b892b42b5d1d47c5f98cf09)
+- feat: Add support for multiple main libraries in dependency mapping and enhance TreeView rendering [`8eaaa8a`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/8eaaa8ad8923a7ddcde1e11b9114cd39d4c361c7)
+- Enhance scrollbar styling for a VS Code-like experience [`33c6474`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/33c64743ce0c861d141269234ca4053833613e18)
+- feat: remove askCopilot command and refactor analyzeBundle function setup [`71fd6a7`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/71fd6a72684e16b6cfbeb95d6df8c642eaa08e33)
+- Implement folder collapsing for wrapper folders in FolderPanel [`9bb7c49`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/9bb7c49d5eccf5db7eb4d9187c4d739555f164b2)
+- Enhance TreeView component with active state styling for dependencies [`8bb021b`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/8bb021b70b448a4469d16598e17ede88ddd02def)
+- feat: add MCP server control buttons and integrate start/stop functionality in Header component [`5561397`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/5561397374a33883c59fac3ebb265797338466cb)
+- refactor: Adjust TreeView and TreeViewRenderNode styles for improved layout and readability [`e35a7e4`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/e35a7e4c40a84b58f9ae0602fbb561716d3e58e9)
+- feat: Optimize unique asset dependencies extraction and enhance TreeViewBundleMainLibraries layout [`ed08c5f`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/ed08c5fca76366397df1814386368128193ad03e)
+- feat: Enhance sorting functionality in TreeView by criteria and direction [`f2ec5c4`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/f2ec5c4bb2af9aded5fb63b195a93950f8acb968)
+- feat: remove MCP server control buttons and related event listeners from webview [`6a6d449`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/6a6d449d03e5fdb4d194b1c61b144a38360b0859)
+- refactor: Simplify prompt handling for Copilot integration by using clipboard [`e2ac827`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/e2ac827e00510c209171efec7e89603b3905ffd5)
+- feat: Update treemap file styling and layout for improved display and interaction [`7208372`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/7208372d51dcf67858bd2787ac6794662041e335)
+- feat: Group and sort files by folder in TreeView component [`c7abb38`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/c7abb38ad20541012e02e67489c1262231f756e4)
+- feat: Enhance library filter matching logic in TreeView and dependency utilities [`f088acd`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/f088acdbce58dca44d786b9692db43fc59d62bd1)
+- Refactor TreeView filter logic to improve bundle visibility [`bca03be`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/bca03bedcebc46a297717345f89f844df6fe1290)
+- feat: Pass libraryFilters to TreemapPanel for enhanced file filtering [`a265574`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/a265574a456641247acdcc099800caa0d6339c3c)
+- feat: Refactor TreeViewBundleMainLibraries to improve library filtering and rendering logic [`d926acf`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/d926acf6b18221f4f5cff2e5086757cd8deae9de)
+- feat: Enhance folder rendering logic to include sibling position information in treemap [`464679c`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/464679c794938bc663b5f216539810f94d20d598)
+- feat: Add unique asset dependencies extraction and logging in TreeView component [`3fce002`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/3fce0023e849830ce199396ddc803db161ff7cd6)
+- fix: Restore logic for filtering asset bundles and update return values for non-bundle nodes [`0d4d9f9`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/0d4d9f9e4d1aa8d6ce2314e9b725eb4eef8c18fa)
+- refactor: Remove unused buildFolderStructure function and related logic [`c73a54f`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/c73a54f6e9bda650c00037ad8c50bee41d9b0f1f)
+- refactor: Simplify node filtering logic in TreeView component [`df8aa55`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/df8aa55b2b8dfe982163f907974607cc43a24cae)
+- refactor: Remove console logs for cleaner code in TreeView and dependency utilities [`e6cec23`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/e6cec2333c5c02e1efbb6b7861352a9d09de282b)
+- feat: Improve folder display logic in treemap for better layout management [`6591d0d`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/6591d0deecc50fed942b2263c79c6587ec43a627)
+- refactor: Adjust file size in TreemapPanel for improved layout consistency [`af74b8c`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/af74b8c1b8cc19acc58dcd4b50179dc1645aa791)
+- feat: Enhance treemap folder header layout with spacing and improved name display [`abd6f33`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/abd6f3372e5e0bdce6a8d8466db5595f20235356)
+- style: Update badge border-radius and enhance TreeView dependency display [`038cffa`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/038cffa6c4fee5c4d95f34aa356ba9355fb62303)
+- Enhance folder icon styling by adding file extension class to tree icon [`075b808`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/075b8086143765013d405b57c19de38d93d139dc)
+- style: Update collapsed path display in FolderPanel for improved clarity [`777149e`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/777149e2f9c099e613cc7471609d0482f27a2b1c)
+- fix: Update toolbar label to clarify file display context [`a773087`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/a7730876cc54314a1a1d17ef578261ff1d8a7169)
+- refactor: Simplify rendering of tree nodes in TreeView component [`e7f640a`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/e7f640a1fea9bf5f603223580bb50afc54751420)
+- feat: Enhance TreeView root node structure by separating folder and file name, and adding hashed identifier [`e1ae77f`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/e1ae77fa34c5231eccbb092725bdbf0f0eec02da)
+- feat: Update folder rendering to display path for depth level 1 in treemap [`49143f6`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/49143f6d7d9270905479ffc4945b788bdce59a0c)
+- feat: Update folder display logic to support sibling position information in treemap layout [`0116ea5`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/0116ea54e42b5beff9cff43d62ac4a24d091f7f4)
+- fix: update class names for main library display in TreeView component [`f735f85`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/f735f85cf304c0e078e534fc6f4c628e34e5e1b1)
+- style: Adjust dependency section width and comment out labels in TreeView [`a810238`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/a8102381873bda611a66d7910335ce5ffe4b0837)
+- fix: Combine total size and file/folder count display in TreeView [`7bc564f`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/7bc564f4cee3ca542127f9edf7a9333554507290)
+- feat: Add hover effect for treemap folders to enhance user interaction [`da79994`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/da799948a887bafff0b585de8d4b9e1ca4a1f150)
+- fix: correct node filter logic to return false for non-bundle leaf nodes [`0a95fd6`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/0a95fd6dc05197995b054922ea1ab25da6b583aa)
+- style: Reduce padding and font size in side panel header for improved layout [`51f8413`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/51f8413f561a832eda1d4fb40fed4124db352b28)
+- feat: update treemap panel dimensions for improved layout [`e89bb57`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/e89bb5743aba34a9b7df766bfe8c6c35664c4673)
+- refactor: Simplify visibility check in TreeView component by removing unnecessary filter match [`6ecaa1a`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/6ecaa1a6025c2a273afb97c81f09078ae4b6c2bc)
+- feat: Enhance styling of the content area with font family, size, and line height adjustments [`c0e5a22`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/c0e5a220e68be182b6a4b6863e0797409ea0db7a)
+- fix: revert version number to 0.0.1 in package.json [`31566fd`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/31566fda5510c2c7e57390b0a9656856e2d1c49f)
+- refactor: Enhance prompt for Copilot integration with additional context [`821ab56`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/821ab56d2413731e7a824702b659e1fdd29cdf87)
+- refactor: Simplify build script in package.json by removing TypeScript compilation [`ca02571`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/ca02571d99881bdb3daf29f57962cf0dd089a24e)
+- feat: Add dynamic display for folder status indicators in treemap [`56e053d`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/56e053d7be58eae9f4b8216df19e22ce874fba08)
+- feat: Display total size of files in TreeView component [`6632a67`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/6632a67ce75feb75b063cdd7e2298aa02c720e30)
+- style: Increase font size for badge in App.css [`43aa06d`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/43aa06d61add1944f03ccbf09541e4fa7a480390)
+- feat: increase side panel width to improve layout [`1e85691`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/1e85691a1cdfa5fb358123d3d3efd3ad3c6af61f)
+- fix: Add border to tree items for improved visual separation [`e6aa9a5`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/e6aa9a5a1a15841f3d0c418592ced1423f1e5282)
+- feat: Remove header title from Header component [`26c0fb4`](https://github.com/rand0mC0d3r/vs-bundle-visualizer/commit/26c0fb45ffcf4f102a47137aa51251b8e21b1edf)
